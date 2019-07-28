@@ -1,0 +1,60 @@
+@import "../../style/common.wxss";
+
+.cinema-list{
+	position: relative;
+	margin: 0 30rpx;
+}
+.cinema-box{
+	width: 100%;
+	padding: 20rpx 0;
+	border-bottom: 1px solid #ccc;
+	font-size: 26rpx;
+}
+.cinema-item{
+	overflow: hidden;
+	margin: 15rpx 0;
+}
+.name{
+	font-size: 36rpx;
+	font-weight: bold;
+}
+.address{
+	width: 80%;
+	color: #5b5a5a;
+}
+.price-value{
+	font-size: 30rpx;
+	color: #E54847;
+}
+.price-color{
+	color: #E54847;
+}
+.tag{
+	display: inline-block;
+	border: 1px solid #EB752E;
+	color: #Eb752E;
+	padding: 2rpx 6rpx;
+	margin-right: 14rpx;
+	margin-bottom: 12rpx;
+	font-size: 19rpx;
+	box-sizing: border-box;
+}
+.activity-box{
+	margin-bottom: 10rpx;
+}
+.activity-key{
+	display: inline-block;
+	background: #e79be2;
+	color: #FFFFFF;
+	padding: 0rpx 6rpx;
+	margin-right: 15rpx;
+	font-size: 19rpx;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+.activity-desc{
+	display: inline-block;
+	line-height: 28rpx;
+	vertical-align: middle;
+	color: #969494;
+}

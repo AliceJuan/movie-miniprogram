@@ -1,0 +1,35 @@
+<view class="comment">
+  <view class="score">
+    <view class="title">整体评价</view>
+    <van-rate 
+      value="{{ score }}" 
+      size="{{ 25 }}" 
+      allow-half 
+      void-color="#eee" 
+      void-icon="star" 
+      bind:change="scoreChangeEvent"
+    />
+    <text class="score-value" wx:if="{{score}}">{{score}}分</text>
+  </view>
+
+  <view class="remark-box">
+    <textarea auto-focus="true" class="remark" placeholder="快来说说你的看法吧" bindinput="commentInputEvent" />
+  </view>
+
+  <view class="upload-group">
+    <view class="upload-box" bindtap="uploadImg">
+      <van-icon class="upload-img" name="photo-o" />
+      <view class="upload-desc">添加图片</view>  
+    </view>
+    <view class="upload-box">
+      <van-icon class="upload-img" name="video-o" />
+      <view class="upload-desc">添加视频</view>  
+    </view>
+  </view>
+
+  <view class="upload-img">
+    <image wx:for="{{images}}" wx:key="{{index}}" src="{{item}}"></image>
+  </view>
+
+  <view class="submit-btn" bindtap="commentSubmit">提交</view>
+</view>

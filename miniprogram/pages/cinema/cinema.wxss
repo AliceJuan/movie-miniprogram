@@ -1,0 +1,4 @@
+.cinema-list{
+	position: relative;
+	margin: 0 30rpx;
+}

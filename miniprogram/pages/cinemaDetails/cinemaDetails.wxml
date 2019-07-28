@@ -1,0 +1,96 @@
+<view class="cinema-details">
+
+	<view class="details">
+		<view class="details-box">
+			<view class="cinema-name">{{cinemaInfo.name}}</view>
+			<view class="cinema-address ellipsis">{{cinemaInfo.address}}</view>
+		</view>
+		<view class="location-box">
+			<image class="location" src="../../images/location.png" />
+		</view>
+	</view>
+	
+	<view class="swiper">
+    <view class="swiper-container">
+      <view class="bg-box">
+        <image class="bg-img" src="{{movieList[movieIndex].imgSrc}}"></image>
+      </view>
+      <view class="swiper-box">
+        <swiper 
+          current="{{movieIndex}}"
+          previous-margin='50px' 
+          display-multiple-items='3' 
+          next-margin='50px' 
+          bindchange="swiperChange"
+          class="swiper-item" 
+        >
+          <swiper-item wx:for='{{movieList}}' wx:key='index' data-index="{{index}}" bindtap="swiperClickChange">
+            <image 
+              class='swiper-img {{movieIndex==index?"swiper-active":""}}'
+              src='{{item.imgSrc}}' 
+            ></image>
+          </swiper-item>
+        </swiper>
+      </view>
+    </view>
+    <view class="introduction">
+      <view class="intro-name">{{ movieList[movieIndex].cname }}</view>
+      <view class="intro-info">{{ movieList[movieIndex].duration + "分钟" }} | {{ movieList[movieIndex].categoryCat }} | {{ movieList[movieIndex].actors[0]+","+movieList[movieIndex].actors[1] }}</view>
+    </view>
+	</view>
+	
+	<view class="movie-time">
+		<view class="time-nav">
+			<text class="time-nav-box {{timeIndex===index ? 'time-nav-active' : null}}" wx:for="{{movieTime}}" wx:key="{{index}}" bindtap="changeDateNav" data-index="{{index}}">
+				<text>{{item.movieDay}}</text>
+			</text>
+		</view>
+		<view class="time-list">
+			<view class="time-box" wx:for="{{movieTime[timeIndex].showTime}}" wx:key="{{index}}">
+				<view class="mini-item">
+					<view class="start-time">{{item.startTime}}</view>
+					<view class="end-time">{{item.endTime}}散场</view>
+				</view>
+				<view class="large-item">
+					<view class="video-type">{{item.videoType}}</view>
+					<view class="video-hall">{{item.videoHall}}</view>
+				</view>
+				<view class="mini-item">
+					<view class="price"><text>￥</text><text class="price-value">{{item.price}}</text></view>
+					<view class="discount">会员价{{item.discountPrice}}元</view>
+				</view>
+				<view class="buy-btn" bindtap="goChooseSeatPage">购票</view>
+			</view>
+		</view>
+	</view>
+	
+	<view class="snack">
+		<view class="snack-title">观影小吃</view>
+		<view class="snack-box" wx:for="{{dealList}}" wx:key="{{index}}">
+			<image class="snack-img" src="{{item.imageUrl}}" />
+			<view class="snack-info">
+				<view class="snack-name">{{item.title}}</view>
+				<view class="snack-price">{{item.price}}元</view>
+			</view>
+      <view class="buy-btn" bindtap="">购买</view>
+		</view>
+	</view>
+	
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

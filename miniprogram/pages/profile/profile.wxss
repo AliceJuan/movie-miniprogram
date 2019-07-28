@@ -1,0 +1,33 @@
+.profile{
+  height: 400rpx;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.profile-back{
+  height: 800rpx;
+  width: 100%;
+  position: absolute;
+  filter: blur(5px);
+}
+.avatar-img{
+  width: 170rpx;
+  height: 170rpx;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #fff;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  margin-top: 100rpx;
+  position: relative;
+  z-index: 10;
+}
+.user-name{
+  position: relative;
+  z-index: 10;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  color: #FFFFFF;
+}

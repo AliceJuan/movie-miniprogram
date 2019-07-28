@@ -1,0 +1,13 @@
+<view class="movie" wx:for="{{filmList}}" wx:key="{{item.movieId}}" bindtap="goFilmDetailsPage">
+  <image class="movie-img" src="{{item.imgSrc}}"></image>
+  <view class="movie-info">
+    <view class="movie-title">{{item.cname}}</view>
+    <view class="movie-score">观众评分：<text class="score-color">{{item.score}}</text></view>
+    <view class="movie-actors">
+      <text>主演：</text>
+      <text class="" wx:for="{{item.actors}}" wx:key="{{index}}">{{item.actorName + ", "}}</text>
+    </view>
+    <view>今天2家电影院放映19场</view>
+    <button size="mini" class="buy-btn" catchtap="goCinemaPage">购票</button>
+  </view>
+</view>

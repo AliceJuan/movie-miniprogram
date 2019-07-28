@@ -1,0 +1,29 @@
+<view class="home">
+  <view class="header">
+    <view class="city">西安</view>
+    <view class="show-type-nav">
+      <text 
+        class="{{showType===index ? 'show-active' : ''}}" 
+        wx:for="{{showTypeData}}" 
+        wx:key="{{index}}" 
+        data-index="{{index}}" 
+        bindtap="toggleShowType"
+      >{{item.name}}</text>
+    </view>
+    <view class="search">
+      <image class="search-icon" src="../../images/search.png"></image>
+    </view>
+  </view>
+
+  <view class="film-list">
+    <view hidden="{{showType===1}}">
+      <film-list filmList="{{filmData}}"></film-list>
+    </view>
+    <view hidden="{{showType===0}}" class="expect-list">
+      <horizontal-list items="{{expectData}}" showType="film" title="近期最受期待"></horizontal-list>
+      <film-list filmList="{{comingData}}"></film-list>
+    </view>
+  </view>
+
+</view>
+

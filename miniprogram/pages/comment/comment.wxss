@@ -1,0 +1,69 @@
+.comment{
+  
+}
+.score{
+  display: flex;
+  padding: 30rpx;
+  border-bottom: 1px solid #ccc;
+}
+.title{
+  font-size: 28rpx;
+  line-height: 60rpx;
+  margin-right: 30rpx;
+}
+.score-value{
+  font-size: 28rpx;
+  line-height: 60rpx;
+  margin-left: 30rpx;
+  color: #999;
+}
+.remark-box{
+  padding: 30rpx;
+}
+.remark{
+  width: 100%;
+  height: 200rpx;
+  /* border: 1px solid #ccc; */
+  font-size: 26rpx;
+}
+.upload-group{
+  display: flex;
+  /* border-bottom: 1px solid #ccc; */
+}
+.upload-img image{
+  margin: 0rpx 0rpx 30rpx 30rpx;
+  width: 150rpx;
+  height: 150rpx;
+  text-align: center;
+  position: relative;
+}
+.upload-box{
+  margin: 0rpx 0rpx 30rpx 30rpx;
+  width: 150rpx;
+  height: 150rpx;
+  border: 1px dashed #ccc;
+  text-align: center;
+  position: relative;
+}
+.upload-img{
+  color: #999;
+  font-size: 50rpx;
+  top: 24rpx;
+  position: relative;
+}
+.upload-desc{
+  font-size: 22rpx;
+  color: #999;
+  margin-top: 20rpx;
+}
+.submit-btn{
+  height: 80rpx;
+  width: 93%;
+  box-sizing: border-box;
+  background: #E54847;
+  line-height: 80rpx;
+  text-align: center;
+  margin: 30rpx auto;
+  color: #FFF;
+  border-radius: 10rpx;
+}

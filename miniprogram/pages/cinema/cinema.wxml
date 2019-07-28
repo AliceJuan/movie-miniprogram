@@ -1,0 +1,9 @@
+<view class="cinema">
+  <view class="cinema-list">
+    <cinema-list 
+      wx:for="{{cinemaList}}" 
+      wx:key="{{item.cinemaId}}" 
+      cinema="{{item}}"
+    ></cinema-list>
+  </view>
+</view>

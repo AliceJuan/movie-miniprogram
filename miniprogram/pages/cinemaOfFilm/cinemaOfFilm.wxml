@@ -1,0 +1,19 @@
+<view class="cinema">
+  <view class="cinema-nav">
+    <text 
+      class="day-item {{dayIndex === index ? 'day-active' : ''}}" 
+      wx:for="{{showDays}}" 
+      wx:key="{{index}}"
+      data-index="{{index}}"
+      bindtap="changeDay"
+    >{{item.date}}</text>
+  </view>
+  <view class="cinema-list">
+    <cinema-list 
+      wx:for="{{cinemaList}}" 
+      wx:key="{{item.cinemaId}}" 
+      bindtap="goCinemaDetailPage" 
+      cinema="{{item}}"
+    ></cinema-list>
+  </view>
+</view>

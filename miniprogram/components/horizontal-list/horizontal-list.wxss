@@ -1,0 +1,30 @@
+/********** actor list **********/
+.actor{
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+  border-bottom: 3px solid #ccc;
+}
+.expect-title{
+  padding: 20rpx 30rpx;
+  font-size: 28rpx;
+}
+.actor-box{
+  display: block;
+  width: 170rpx;
+  padding: 0rpx 0 30rpx 30rpx;
+}
+.actor-box:last-child{
+  padding-right: 30rpx;
+}
+.actor-img{
+  height: 220rpx;
+  width: 160rpx;
+}
+.actor-name, .actor-mask{
+  font-size: 25rpx;
+  line-height: 40rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

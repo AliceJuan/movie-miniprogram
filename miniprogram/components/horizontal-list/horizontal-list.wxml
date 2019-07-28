@@ -1,0 +1,10 @@
+<view>
+  <view class="expect-title">{{title}}</view>
+  <view class="actor">
+    <view class="actor-box" wx:for="{{items}}" wx:key="{{index}}">
+      <image class="actor-img" src="{{showType==='actor' ? item.actorSrc : item.imgSrc}}"></image>
+      <view class="actor-name">{{showType==='actor' ? item.actorName : item.cname}}</view>
+      <view class="actor-mask">{{showType==='actor' ? item.actorMask : item.releaseDate}}</view>
+    </view>
+  </view>
+</view>

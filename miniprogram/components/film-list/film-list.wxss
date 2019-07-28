@@ -1,0 +1,38 @@
+.movie{
+  height: 200rpx;
+  display: flex;
+  padding: 30rpx;
+  border-bottom: 1px solid #ccc;
+}
+.movie-img{
+  height: 100%;
+  width: 150rpx;
+  margin-right: 30rpx;
+}
+.movie-info{
+  position: relative;
+  flex: 1;
+  font-size: 26rpx;
+  line-height: 50rpx;
+}
+.movie-title{
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.score-color{
+  color: #faaf00;
+  font-weight: bold;
+}
+.movie-actors{
+  width: 500rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.buy-btn{
+  position: absolute;
+  top: 15rpx;
+  right: 0;
+  background-color: #E54847;
+  color: #FFFFFF;
+}

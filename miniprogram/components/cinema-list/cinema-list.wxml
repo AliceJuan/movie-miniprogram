@@ -1,0 +1,17 @@
+<view class="cinema-box" bindtap="goCinemaDetailPage" >
+  <view class="cinema-item">
+    <text class="name fl">{{cinema.name}}</text>
+    <text class="price fr"><text class="price-value">42.99</text><text class="price-color">元</text>起</text>
+  </view>
+  <view class="cinema-item">
+    <text class="address ellipsis fl">{{cinema.address}}</text>
+    <text class="distance fr">0.4km</text>
+  </view>
+  <view class="tag-box">
+    <text class="tag" wx:for="{{item.tags}}" wx:key="{{index}}" wx:if="{{index > 0}}">{{cinema}}</text>
+  </view>
+  <view class="activity-box" wx:for="{{cinemaActivity}}" wx:key="{{index}}">
+    <text class="activity-key">{{item.title}}</text>
+    <text class="activity-desc">{{item.desc}}</text>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "actor-list": "../../components/horizontal-list/horizontal-list",
+    "van-rate": "vant-weapp/rate"
+  }
+}

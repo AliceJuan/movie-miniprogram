@@ -1,0 +1,50 @@
+<view class="film-detail">
+  <view class="detail-info">
+    <image class="detail-img" src="{{filmDetail.imgSrc}}"></image>
+    <view>
+      <view class="detail-title">{{filmDetail.cname}}</view>
+      <view class="detail-ename">{{filmDetail.ename}}</view>
+      <view class="detail-score">
+        <van-rate
+          value="{{ filmDetail.score / 2 }}"
+          size="{{ 20 }}"
+          allow-half
+          void-color="#eee"
+          void-icon="star"
+          readonly
+        />
+        <view class="people-num">{{filmDetail.peopleNum}}人评分</view>
+      </view>
+      <view class="detail-category">{{filmDetail.categoryCat}}</view>
+      <view class="detail-release-date">{{filmDetail.releaseDate}}</view>
+    </view>
+  </view>
+  <view class="detail-desc">
+    <view>{{filmDetail.desc}}</view>
+    <image class="desc-btn" src="../../images/arrow-up.png"></image>
+  </view>
+
+  <actor-list items="{{filmDetail.actors}}" showType="actor"></actor-list>
+
+  <view class="comment">
+    <view class="comment-title">
+      <text>讨论</text>
+      <text class="join-comment-btn" bindtap="goCommentPage">参与讨论</text>
+    </view>
+    <view class="comment-box" wx:for="{{comments}}" wx:key="{{item.id}}">
+      <image class="comment-img" src="{{item.avatarUrl}}"></image>
+      <view class="comment-right">
+        <view>{{item.nick}}</view>
+        <view class="comment-score">给这部作品打了{{item.score}}分</view>
+        <view class="comment-content">{{item.content}}</view>
+        <view>
+          <text class="comment-time">{{item.startTime}}</text>
+          <text class="dianzan-count">{{item.upCount}}</text>
+          <image class="dianzan-img" src="../../images/dianzan.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <button class="detail-buy-btn" bindtap="goCinemaPage">特惠购票</button>
+</view>

@@ -1,0 +1,26 @@
+.cinema-list{
+	position: relative;
+	margin: 0 30rpx;
+  top: 90rpx;
+}
+.cinema-nav{
+  height: 90rpx;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+  position: fixed;
+  background: #f6f6f6;
+  z-index: 5;
+}
+.day-item{
+  line-height: 90rpx;
+  font-size: 28rpx;
+  padding: 0 20rpx;
+  width: 200rpx;
+  white-space: nowrap;
+  border-bottom: 1px solid #ccc;
+}
+.day-active{
+  color: #E54847;
+  border-bottom: 2px solid #E54847;
+}

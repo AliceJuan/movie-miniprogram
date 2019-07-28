@@ -1,0 +1,221 @@
+.details{
+	height: 150rpx;
+	width: 100%;
+	padding: 20rpx 0 20rpx 30rpx;
+	font-size: 26rpx;
+	display: flex;
+	box-sizing: border-box;
+}
+.details-box{
+	flex: 1;
+}
+.location-box{
+	width: 150rpx;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    border-left: 1px solid #ccc;
+}
+.cinema-name{
+	font-size: 36rpx;
+	font-weight: bold;
+	line-height: 70rpx;
+}
+.cinema-address{
+	color: #5b5a5a;
+}
+.location{
+	width: 60rpx;
+	height: 60rpx;
+	background-size: contain;
+}
+
+/**************** swiper ****************/
+.swiper{
+	border-bottom: 1px solid #ccc;
+}
+.swiper-container{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.bg-box{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.bg-img{
+  width: 100%;
+  height: 100%;
+  filter: blur(30px);
+}
+.swiper-box{
+	width: 100%;
+  padding: 30rpx 0;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.swiper-item{
+  height: 260rpx;
+}
+.swiper-img {
+  height: 260rpx;
+  width: 180rpx;
+  display: block;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+.swiper-active {
+  transform: scale(1);
+  border: 3px solid #FFF;
+  box-sizing: border-box;
+}
+.swiper-box::after{
+  width: 0;
+  height: 0;
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1rpx;
+  z-index: 100;
+  border: 15rpx solid transparent;
+  border-bottom: 18rpx solid #f6f6f6;
+}
+.introduction{
+	text-align: center;
+	padding: 16rpx 0;
+}
+.intro-name{
+	font-size: 34rpx;
+	font-weight: bold;
+	line-height: 60rpx;
+}
+.intro-info{
+	color: #5b5a5a;
+	font-size: 26rpx;
+	line-height: 50rpx;
+}
+
+
+/****************** time *****************/
+.time-nav{
+	height: 80rpx;
+	border-bottom: 1px solid #ccc;
+	font-size: 30rpx;
+  display: flex;
+}
+.time-nav-box{
+	height: 80rpx;
+	line-height: 80rpx;
+	padding: 0 30rpx;
+}
+.time-nav-active{
+	color: #E54847;
+	border-bottom: 2px solid #E54847;
+}
+
+.time-list{
+	font-size: 26rpx;
+}
+.time-box{
+	border-bottom: 1px solid #ccc;
+	display: flex;
+	padding: 32rpx 20rpx 32rpx 30rpx;
+}
+.large-item{
+	width: 35%;
+}
+.mini-item{
+	width: 25%;
+}
+.start-time{
+	font-size: 34rpx;
+	line-height: 60rpx;
+}
+.price{
+  color: #E54847;
+  height: 60rpx;
+  line-height: 60rpx;
+	box-sizing: border-box;
+}
+.price-value{
+  font-size: 34rpx;
+}
+.video-type{
+	height: 60rpx;
+	padding-top: 14rpx;
+	box-sizing: border-box;
+}
+.end-time, .video-hall, .discount{
+	font-size: 24rpx;
+	color: #969494;
+}
+.buy-btn{
+	height: 50rpx;
+  line-height: 50rpx;
+  border: 1px solid #E54847;
+  border-radius: 30rpx;
+  font-size: 24rpx;
+  color: #E54847;
+  margin-top: 16rpx;
+  width: 90rpx;
+  text-align: center;
+}
+
+
+
+/****************** snack ******************/
+.snack{
+	margin: 0 30rpx;
+}
+.snack-title{
+	line-height: 80rpx;
+	font-size: 30rpx;
+}
+.snack-box{
+	display: flex;
+	font-size: 26rpx;
+  padding: 20rpx 0;
+}
+.snack-img{
+	height: 150rpx;
+	width: 150rpx;
+	margin-right: 30rpx;
+}
+.snack-info{
+	flex: 1;
+}
+.snack-name{
+	height: 100rpx;
+}
+.snack-price{
+  line-height: 60rpx;
+  font-size: 32rpx;
+  color: #E54847;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

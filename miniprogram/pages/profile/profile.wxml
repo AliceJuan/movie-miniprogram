@@ -1,0 +1,9 @@
+<view class="profile">
+  <view class="profile-back" style="background: url({{avatarUrl}});background-repeat: no-repeat;background-size: contain;"></view>
+  <view class="avatar-img">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <open-data class="user-name" type="userNickName"></open-data>
+</view>
+
+<button size="mini" bindgetuserinfo="onGotUserInfo">获取用户信息</button>

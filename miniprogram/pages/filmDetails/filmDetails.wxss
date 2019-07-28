@@ -1,0 +1,103 @@
+.detail-info{
+  height: 280rpx;
+  background: #ccc;
+  padding: 30rpx;
+  display: flex;
+  font-size: 26rpx;
+}
+.detail-img{
+  height: 100%;
+  width: 200rpx;
+  margin-right: 30rpx;
+}
+.detail-title{
+  font-size: 40rpx;
+}
+.detail-ename, .detail-category, .detail-release-date{
+  line-height: 40rpx;
+}
+.detail-score{
+  margin: 15rpx 0;
+}
+.detail-score image{
+  height: 40rpx;
+  width: 40rpx;
+  background-size: contain;
+  display: inline-block;
+}
+.detail-score .people-num{
+  font-size: 22rpx;
+}
+.detail-desc{
+  height: auto;
+  font-size: 26rpx;
+  padding: 30rpx 30rpx 10rpx 30rpx;
+  border-bottom: 3px solid #ccc;
+}
+.desc-btn{
+  width: 50rpx;
+  height: 50rpx;
+  background-size: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.detail-buy-btn{
+  position: fixed;
+  bottom: 0;
+  width: 95%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 20rpx 20rpx;
+  background-color: #E54847;
+  color: #FFFFFF;
+}
+
+/***************** comment *******************/
+.comment{
+  margin: 20rpx 30rpx;
+  margin-bottom: 100rpx;
+}
+.comment-title{
+  font-size: 30rpx;
+}
+.join-comment-btn{
+  width: 120rpx;
+  float: right;
+  font-size: 22rpx;
+  background: #E54847;
+  color: #FFFFFF;
+  border-radius: 25rpx;
+  padding: 9rpx 10rpx;
+  text-align: center;
+  box-sizing: border-box;
+}
+.comment-box{
+  position: relative;
+  padding: 30rpx 0;
+  border-bottom: 1px solid #ccc;
+}
+.comment-img{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  float: left;
+}
+.comment-right{
+  margin-left: 100rpx;
+  font-size: 25rpx;
+}
+.comment-content{
+  padding: 14rpx 0;
+}
+.dianzan-img{
+  width: 25rpx;
+  height: 25rpx;
+  margin-right: 10rpx;
+}
+.dianzan-img, .dianzan-count{
+  float: right;
+}
+.comment-score, .comment-time, .dianzan-count{
+  color: #969494;
+}

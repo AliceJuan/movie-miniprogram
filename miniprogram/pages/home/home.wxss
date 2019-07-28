@@ -1,0 +1,42 @@
+.home{
+  width: 100%;
+}
+.header{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #ccc;
+  font-size: 28rpx;
+  padding: 0 30rpx;
+  background: #f6f6f6;
+  z-index: 5;
+  box-sizing: border-box;
+}
+.city, .search{
+  flex: 1;
+}
+.search{
+  text-align: right;
+}
+.show-type-nav{
+  flex: 2;
+  text-align: center;
+  display: flex;
+}
+.show-type-nav text{
+  flex: 1;
+}
+.show-active{
+  color: #E54847;
+  border-bottom: 2px solid #E54847;
+}
+.search-icon{
+  width: 30rpx;
+  height: 30rpx;
+}
+.film-list{
+  position: relative;
+  top: 80rpx;
+}
